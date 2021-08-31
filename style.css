@@ -106,7 +106,7 @@ button:active{
   }
   /*responsive corner*/
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 768px) {
 
       #survey-form {
         margin: 20px 10px 0 40px;
