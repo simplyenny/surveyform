@@ -15,14 +15,14 @@
         <p id="description">Thank you for taking your time to help us improve the platform</p>
     </header>
     <main>
-        <form id="survey-form">
+        <form action="index.html" method="POST" id="survey-form">
         <div class="form-group">
             <label id="name-label" for="name">Name<br><input type="text" id="name" placeholder="Enter your name" required></label><br>
             <label id="email-label" for="email">Email<br><input type="email" id="email" placeholder="Enter your email" aria-required="true"></label><br>
             <label id="age-label" for="age">Age (optional)<br><input type="number" id="number" placeholder="Age" min="1" max="99"></label>
         </div>
         <div class="form-group">
-                <p id="tag">Which option best describes your current role?<br>
+               <label> Which option best describes your current role?</label>
                 <select id="dropdown" name="role" required>
                     <option disabled selected value>Select current role</option>
                     <option value="student">Student</option>
@@ -33,14 +33,14 @@
                 </select>
         </div>
                 <div class="form-group">
-                    <p>Would you recommend freeCodeCamp to a friend?</p>
-                    <label for="options"><input id="options" type="radio" name="definietly">Definietly</label><br>
-                    <label for="options"><input id= "options" type="radio" name="maybe" >Maybe</label><br>
-                    <label for="options"><input id= "options" type="radio" name="notsure" >Not Sure</label>
+                    <label>Would you recommend freeCodeCamp to a friend?</label><br>
+                    <label for="definetly"><input id="definetly" type="radio"  name="recommend">Definetly</label><br>
+                    <label for="maybe"><input id= "maybe" type="radio" name="recommend" >Maybe</label><br>
+                    <label for="notsure"><input id= "notsure" type="radio" name="recommend" >Not Sure</label>
                 
                 </div>
             <div class="form-group">
-                    <p id="tag">What would you like to see improved? <span>(Check all that apply)</span></p>
+                    <label>What would you like to see improved? <span>(Check all that apply)</span></label><br>
                     <label><input id="options" type="checkbox" name="improve">Front-end Projects</label><br>
                     <label><input id="options" type="checkbox" name="improve">Back-end Projects</label><br>
                     <label><input id="options" type="checkbox" name="improve">Data Visualization</label><br>
@@ -55,23 +55,23 @@
                    
                 </div>
             <div class="form-group">
-                    <p id="tag">What is your favourite feature of freeCodeCamp?<br>
+                    <label>What is your favourite feature of freeCodeCamp?</label><br>
                     <select id="dropdown" name="feature" required>
                         <option disabled selected value>Select an option</option>
                         <option value="challenges">Challenges</option>
                         <option value="project">Projects</option>
                         <option value="community">Community</option>
                         <option value="opensource">Open Source</option>
-                    </p>
+                    
                     </select>
                 </div>
             <div class="form-group">
-                <p id="tag">Additional Comment or suggestion
+                <label>Additional Comment or suggestion</label>
                 <label><input id="comment" type="textarea" placeholder="Enter comments here"></label>
-                </p>
+                
             </div>
             <div class="form-group">
-                <button type="submit" id="submit">Submit</button>
+                <button input type="submit" value="" >Submit</button>
             </div>
         </form>
     </main>
