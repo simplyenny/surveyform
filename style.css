@@ -106,13 +106,14 @@ button:active{
   }
   /*responsive corner*/
 
-  @media screen and (max-width: 768px) {
+  
+  @media screen and (max-width: 860px) {
 
       #survey-form {
-        margin: 20px 10px 0 40px;
+        margin: 20px 15px 0 20px;
         width: auto;
         height: auto;
-        background-color: whitesmoke;
+        background-color: lightgrey;
         scroll-behavior: auto;
      }
      #description {
@@ -123,18 +124,23 @@ button:active{
         font-size: 20px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1em;
-        color: rgb(29, 26, 26);
+        color: rgba(12, 22, 80, 0.644);
         
     }
-    /*label {
-        font-weight: bold 400;
-
-    }*/
+    
     select {
         display: block;
-        width: 150px;
+        width: 300px;
         padding: 6px;
-        margin: 2px;
+        font-size: 12px;
+        margin: 4px 14px 4px 0;
        }
+    
+    select:focus{
+        width: auto;
+        position: relative;
+        width: 180px;
+    }
+     
 
   }
